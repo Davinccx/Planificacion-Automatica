@@ -285,8 +285,8 @@ def main():
         for x in carrier:
             f.write("\t" + x + " - carrier\n")
 
-        f.write("\t"+"freederecho - brazo\n")
-        f.write("\t"+"freeizquierdo - brazo\n")
+        f.write("\t"+"derecho - brazo\n")
+        f.write("\t"+"izquierdo - brazo\n")
         f.write(")\n")
 
         ######################################################################
@@ -314,7 +314,7 @@ def main():
         f.write("\n")
 
         for x in person:
-            f.write("(persona-necesita "+x+" "+random.choice(content_types)+") ")
+            f.write("(necesita "+x+" "+random.choice(content_types)+") ")
         f.write("\n")
 
         f.write("\n")
@@ -341,7 +341,7 @@ def main():
                     content_name = content_types[y]
                     # TODO: write a goal that the person needs a crate
                     # with this specific content
-                    f.write("(persona-tiene-contenido "+person[x]+" "+random.choice(content_types)+") ")
+                    f.write("(tiene-contenido "+person[x]+" "+random.choice(content_types)+") ")
                     
 
         
